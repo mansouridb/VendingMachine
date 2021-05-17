@@ -1,52 +1,29 @@
 package Vending;
 
-public class Product {
-    private long price;
-    private String name;
-    private String calories;
-    private String allergens;
+public enum Product {
+    drinks(1,20), food(2,100), sweets(3,60),    fruits(4,50), etc(0,0);
+    private int selectionNumber;
+    private int price;
 
-    public Product(long price, String name, String calories, String allergens) {
+    Product(int selectionNumber, int price) {
+        this.selectionNumber = selectionNumber;
         this.price = price;
-        this.name = name;
-        this.calories = calories;
-        this.allergens = allergens;
     }
 
-    public Product(String name) {
-        this.name = name;
+    public int getSelectionNumber() {
+        return selectionNumber;
     }
 
-    public long getPrice() {
+    public void setSelectionNumber(int selectionNumber) {
+        this.selectionNumber = selectionNumber;
+    }
+
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(int price) {
         this.price = price;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCalories() {
-        return calories;
-    }
-
-    public void setCalories(String calories) {
-        this.calories = calories;
-    }
-
-    public String getAllergens() {
-        return allergens;
-    }
-
-    public void setAllergens(String allergens) {
-        this.allergens = allergens;
-    }
-
 }
+
