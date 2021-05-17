@@ -9,7 +9,11 @@ public enum Cash {
 
     private int value;
 
-
+    private int cashValue;
+   
+    public int getCashValue() {
+        return cashValue;
+    }
 
     public int getValue() {
         return value;
