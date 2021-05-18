@@ -5,6 +5,7 @@ public enum Product {
     private int selectionNumber;
     private int price;
 
+
     Product(int selectionNumber, int price) {
         this.selectionNumber = selectionNumber;
         this.price = price;
