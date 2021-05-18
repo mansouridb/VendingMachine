@@ -22,4 +22,19 @@ public class CashBundle {
         this.num500Koron = enteredCash[7];
         this.num1000Koron = enteredCash[8];
     }
+
+    public int getTotal() {
+        int total = 0;
+        total = total + this.num1koron * Cash.EttKoron.getValue();
+        total = total + this.num2Koron * Cash.tvoKoron.getValue();
+        total = total + this.num5Koron * Cash.femKoron.getValue();
+        total = total + this.num10Koron * Cash.tioKoron.getValue();
+        total = total + this.num50Koron * Cash.fimtiokoron.getValue();
+        total = total + this.num100Koron * Cash.Etthundrakoron.getValue();
+        total = total + this.num500Koron * Cash.femHundraKoron.getValue();
+        total = total + this.num1000Koron * Cash.etttTusenkoron.getValue();
+
+        return total;
+    }
+
 }
