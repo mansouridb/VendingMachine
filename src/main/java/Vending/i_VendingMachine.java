@@ -6,9 +6,9 @@ public interface i_VendingMachine {
 
     void selectProduct(int product);
 
-    void displayEnterCoinsMessage();
+     void displayEnterCashMessage();
 
-    void enterCoins(int... Cash);
+    void enterCash(int... Cash);
 
     void displayChangeMessage();
 

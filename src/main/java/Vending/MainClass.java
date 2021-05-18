@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class MainClass {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        UI ui =null;
-        ui.displayProducts();
+        i_VendingMachine machineInterface = null;
+        machineInterface.displayProducts();
 
         String selectedProduct = scanner.nextLine();
-        ui.selectProduct(Integer.parseInt(selectedProduct));
+        machineInterface.selectProduct(Integer.parseInt(selectedProduct));
 
-        i_VendingMachine.displayEnterCashMessage();
+        machineInterface.displayEnterCashMessage();
 
-        String userEnteredCoins = scanner.nextLine();
-        int[] enteredCoins = {};
-        i_VendingMachine.enterCash(enteredCoins);
+        String userEnteredCash = scanner.nextLine();
+        int[] enterCash = {};
+        machineInterface.enterCash(enterCash);
 
-        i_VendingMachine.displayChangeMessage();
+        machineInterface.displayChangeMessage();
 
     }
 }
