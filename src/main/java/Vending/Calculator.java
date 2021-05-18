@@ -1,8 +1,7 @@
 package Vending;
 
 public interface Calculator {
-    int calculateTotal(CashBundle enteredCoins);
+    int calculateTotal(CashBundle enterCash);
     CashBundle calculateChange(int enteredByUserMoney);
-
 }
 
