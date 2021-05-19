@@ -1,4 +1,4 @@
-package Vending;
+package org.example.vending;
 
 public enum Product {
     drinks(1, 20), food(2, 100), sweets(3, 60), fruits(4, 50), etc(0, 0);

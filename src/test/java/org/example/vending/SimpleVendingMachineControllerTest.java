@@ -1,6 +1,4 @@
-package Vending;
-
-import static org.junit.jupiter.api.Assertions.*;
+package org.example.vending;
 
 class SimpleVendingMachineControllerTest {
 

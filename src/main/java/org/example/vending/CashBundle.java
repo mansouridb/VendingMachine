@@ -1,4 +1,4 @@
-package Vending;
+package org.example.vending;
 
 public class CashBundle {
     public int num1koron;

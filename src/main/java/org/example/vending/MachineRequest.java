@@ -1,4 +1,4 @@
-package Vending;
+package org.example.vending;
 
 public class MachineRequest {
     public Product product;

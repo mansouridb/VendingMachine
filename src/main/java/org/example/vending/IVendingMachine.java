@@ -1,6 +1,6 @@
-package Vending;
+package org.example.vending;
 
-public interface i_VendingMachine {
+public interface IVendingMachine {
 
     void displayProducts();
 

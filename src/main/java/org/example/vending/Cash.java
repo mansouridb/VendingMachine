@@ -1,5 +1,4 @@
-package Vending;
-
+package org.example.vending;
 public enum Cash {
     EttKoron(1), tvoKoron(2), femKoron(5), tioKoron(10), fimtiokoron(50), Etthundrakoron(100), tvoHundra(200), femHundraKoron(500), etttTusenkoron(1000);
 
